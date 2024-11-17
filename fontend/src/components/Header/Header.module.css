@@ -1,0 +1,42 @@
+
+.container {
+	color: black;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	width: 100%;
+	backdrop-filter: blur(1rem);
+	position: relative;
+	height: 10%;
+	user-select: none;	
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0 0.1rem 1rem #0000002e;
+}
+
+.logoweb {
+	&:hover {
+		text-decoration: none;
+	}
+	width: 15rem;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	display: flex;
+	user-select: none;
+	align-items: center;
+	gap: 0.5rem;
+	img {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	h6 {
+		color: black;
+	}
+}
+
+.rightContainer {
+	width: 15rem;
+	justify-content: flex-end;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+

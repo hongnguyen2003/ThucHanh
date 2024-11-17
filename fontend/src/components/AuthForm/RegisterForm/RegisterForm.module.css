@@ -1,0 +1,20 @@
+.container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #ffffff15;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 5rem;
+	backdrop-filter: blur(1rem);
+	.row{
+		width: 60%;
+		height: 60%;
+	}
+	
+}
