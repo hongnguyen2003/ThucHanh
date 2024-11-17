@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon --exec babel-node server.js"
+		"start": "nodemon --exec  babel-node server.js"
 	},
 	"author": "rurimeiko",
 	"license": "ISC",
@@ -17,9 +17,15 @@
 		"nodemon": "^3.1.5"
 	},
 	"dependencies": {
+		"babel-plugin-module-resolver": "^5.0.2",
+		"connect-redis": "^7.1.1",
+		"cookie-parser": "^1.4.7",
 		"dotenv": "^16.4.5",
 		"ejs": "^3.1.10",
 		"express": "^4.21.0",
-		"mysql2": "^3.11.3"
+		"jsonwebtoken": "^9.0.2",
+		"mysql2": "^3.11.3",
+		"redis": "^4.7.0",
+		"sequelize": "^6.37.5"
 	}
 }

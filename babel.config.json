@@ -8,5 +8,22 @@
 				"corejs": "3.6.5"
 			}
 		]
+	],
+	"plugins": [
+		[
+			"module-resolver",
+			{
+				"alias": {
+					"@views": "./views",
+					"@utils": "./utils",
+					"@models": "./models",
+					"@config": "./config",
+					"@src": "./src",
+					"@routes": "./routes",
+					"@controllers": "./controllers"
+
+				}
+			}
+		]
 	]
 }

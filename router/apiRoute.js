@@ -1,13 +1,14 @@
 import express from 'express';
-import { delUser, updateUser, addUser } from '../controllers/api/User';
+import UserAPI from './api/api.user';
+import AuthAPI from './api/api.auth';
 const router = express.Router();
 
 const RouterAPI = (app) => {
 
 
-    router.delete('/delUser', delUser);
-    router.put('/updateUser', updateUser);
-    router.post('/addUser', addUser);
+    UserAPI(router);
+    AuthAPI(router);
+ 
 
     return app.use("/api", router);
 }
